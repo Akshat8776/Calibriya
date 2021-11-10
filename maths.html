@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn and Grow | Calibriya.com</title>
+    <link rel="stylesheet" href="newcss.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="newcss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newcss.css" type="text/css"/>
+    <link rel="stylesheet" href="newcss.css" type="text/css">
+    </head>
+    
+   
+    <nav id="navbar">
+        
+        <ul>
+            <li class="item"><a href="/Calibriya/index.html#home">Home</a></li>
+            <li class="item"><a href="/Calibriya/index.html#services-container">Services</a></li>
+            <li class="item"><a href="/Calibriya/index.html#client-section">Our Clients</a></li>
+            <li class="item"><a href="/Calibriya/index.html#Contact">Contact Us</a></li>
+            <li class="item"><a href="/Calibriya/login/loginpg.html">Login</a></li> 
+        </ul>
+    </nav>
+    <div id="background-image">
+    <div class="slider-box">
+            <div id="slider">
+                <img src="images/img1.png" alt="">
+                <img src="images/img2.png" alt="">
+                <img src="images/img3.png" alt="">
+                <img src="images/Calibriya.png" alt="">
+            </div>
+            
+            <div class="indicators">
+                <span id="btn1" class="active"></span>
+                <span id="btn2"></span>
+                <span id="btn3"></span>
+                <span id="btn4"></span>
+            </div>
+        
+    </div>
+    
+        <center>
+
+        </center>
+    
+        <script>
+            var slide=document.getElementById("slider");
+            var btn1=document.getElementById("btn1");
+            var btn2=document.getElementById("btn2");
+            var btn3=document.getElementById("btn3");
+            var btn4=document.getElementById("btn4");
+            btn1.onclick = function(){
+                slide.style.transform = "translateX(0px)";
+                btn1.classList.add("active");
+                btn2.classList.remove("active");
+                btn3.classList.remove("active");
+                btn4.classList.remove("active");
+            };
+            btn2.onclick = function(){
+                slide.style.transform = "translateX(-1490px)";
+                btn2.classList.add("active");
+                btn1.classList.remove("active");
+                btn3.classList.remove("active");
+                btn4.classList.remove("active");
+            };
+            btn3.onclick = function(){
+                slide.style.transform = "translateX(-2900px)";
+                btn3.classList.add("active");
+                btn2.classList.remove("active");
+                btn1.classList.remove("active");
+                btn4.classList.remove("active");
+            };
+            btn4.onclick = function(){
+                slide.style.transform = "translateX(-4400px)";
+                btn4.classList.add("active");
+                btn2.classList.remove("active");
+                btn3.classList.remove("active");
+                btn1.classList.remove("active");
+            };
+        </script>
+        
+    </div>
+   
+ 
+  
